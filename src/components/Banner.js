@@ -32,7 +32,7 @@ export const Banner=() =>{
 
         const ticker = setInterval(tick, delta);
         return () => clearInterval(ticker);
-    }, [text, delta, isDeleting, loopNum, period, toRotate]);
+    }, [text, delta, isDeleting, loopNum]);
 return(
    <section className={"banner"} id={"home"}>
         <Container>
