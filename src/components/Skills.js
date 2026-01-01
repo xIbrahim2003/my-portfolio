@@ -17,9 +17,6 @@ import cloud from '../assets/img/cloud.svg';
 import forensic from '../assets/img/forensic.svg'; 
 import docker from '../assets/img/docker.svg'; 
 import TrackVisibility from 'react-on-screen';
-const responsive={
-
-}
 export const Skills=() =>{
     const responsive = {
         superLargeDesktop: {
@@ -55,62 +52,62 @@ export const Skills=() =>{
                             <p>Voici une liste de compétences en informatique acquises tout au long de mon parcours  </p>
                             <Carousel responsive={responsive} infinite={true} className={"skill-slider"}>
                                 <div className={"item"}>
-                                    <img src={cppicon} alt={"image"}/>
+                                    <img src={cppicon} alt="C++"/>
                                     <h5>C++</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={pythonicon} alt={"image"}/>
+                                    <img src={pythonicon} alt="Python"/>
                                     <h5>Python</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={cloud} alt={"image"}/>
+                                    <img src={cloud} alt="Cloud"/>
                                     <h6><br></br> </h6>
                                     <h5>Cloud</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={forensic} alt={"image"}/>
+                                    <img src={forensic} alt="Forensic"/>
                                     <h6> <br></br></h6>
                                     <h5>Forensic</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={cybersecurityicon} alt={"image"}/>
+                                    <img src={cybersecurityicon} alt="CyberSécurité"/>
                                     <h5>CyberSécurité</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={mlicon} alt={"image"}/>
+                                    <img src={mlicon} alt="Machine Learning"/>
                                     <h5>Machine Learning</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={docker} alt={"image"}/>
+                                    <img src={docker} alt="Docker"/>
                                     <h6> <br></br></h6>
                                     <h5>Docker</h5>
                                 </div>                                
                                 <div className={"item"}>
-                                    <img src={sqlicon} alt={"image"}/>
+                                    <img src={sqlicon} alt="SQL"/>
                                     <h5>SQL</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={reseauicon} alt={"image"}/>
+                                    <img src={reseauicon} alt="Réseau"/>
                                     <h5>Réseau d'ordinateurs</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={reacticon} alt={"image"}/>
+                                    <img src={reacticon} alt="React"/>
                                     <h5>ReactJs</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={kotlinicon} alt={"image"}/>
+                                    <img src={kotlinicon} alt="Kotlin"/>
                                     <h5>Kotlin</h5>
                                 </div>
                                  <div className={"item"}>
-                                    <img src={htmlicon} alt={"image"}/>
+                                    <img src={htmlicon} alt="HTML"/>
                                     <h5>Html</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={cssicon} alt={"image"}/>
+                                    <img src={cssicon} alt="CSS"/>
                                     <h5>Css</h5>
                                 </div>
                                 <div className={"item"}>
-                                    <img src={jsicon} alt={"image"}/>
+                                    <img src={jsicon} alt="JavaScript"/>
                                     <h5>JavaScript</h5>
                                 </div>
                             </Carousel>
@@ -120,7 +117,7 @@ export const Skills=() =>{
                     </Col>
                 </Row>
             </Container>
-            <img className={"background-image-left"} src={colorSharp}/>
+            <img className={"background-image-left"} src={colorSharp} alt=""/>
         </section>
     )
 }

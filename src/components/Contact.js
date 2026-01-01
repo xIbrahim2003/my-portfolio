@@ -36,10 +36,10 @@ export const Contact=()=>{
         setButtonText("Send");
         let result = await response.json();
         setFormDetails(formInitialDetails);
-        if (result.code == 200) {
-            setStatus({ succes: true, message: 'Message sent successfully'});
+        if (result.code === 200) {
+            setStatus({ success: true, message: 'Message sent successfully'});
         } else {
-            setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+            setStatus({ success: false, message: 'Something went wrong, please try again later.'});
         }
     };
 
@@ -48,12 +48,12 @@ export const Contact=()=>{
                 <Container>
                     <Row className={"align-items-center"}>
                         <Col md={6}>
-                            <img src={contactImg} alt={"contact image"}/>
+                            <img src={contactImg} alt="Illustration de contact" />
                         </Col>
                         <Col md={6}>
                             <h2>Contactez-moi</h2>
                             <form onSubmit={handleSubmit}>
-                                <row>
+                                <Row>
                                     <Col sm={6} className={"px-1"}>
                                        <input type={"text"} value={formDetails.firstName} placeholder={"Prénom"} onChange={(e)=>onFormUpdate('firstName',e.target.value)}/>
                                     </Col>
@@ -67,7 +67,7 @@ export const Contact=()=>{
                                         <input type={"tel"} value={formDetails.phone} placeholder={"téléphone"} onChange={(e)=>onFormUpdate('phone',e.target.value)}/>
                                     </Col>
                                     <Col>
-                                        <textarea row={6} value={formDetails.message} placeholder={"Message"} onChange={(e)=>onFormUpdate('message',e.target.value)}/>
+                                        <textarea rows={6} value={formDetails.message} placeholder={"Message"} onChange={(e)=>onFormUpdate('message',e.target.value)}/>
                                         <button type={"submit"}><span>{buttonText}</span></button>
                                     </Col>
                                     {
@@ -76,7 +76,7 @@ export const Contact=()=>{
                                             <p className={status.success===false?"danger":"success"}>{status.message}</p>
                                         </Col>
                                     }
-                                </row>
+                                </Row>
                             </form>
                         </Col>
                     </Row>

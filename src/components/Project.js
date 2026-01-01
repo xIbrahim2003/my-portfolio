@@ -3,7 +3,7 @@ import projImg1 from "../assets/img/prog-socket.png";
 import projImg2 from "../assets/img/memory_game.png";
 import projImg3 from "../assets/img/rsz_drawingcirclelogo.jpg";
 import projImg4 from "../assets/img/rsz_bases-de-donnees.jpg";
-import projImg5 from "../assets/img/chat_app.png";
+// projImg5 removed (unused): ../assets/img/chat_app.png
 import projImg6 from "../assets/img/marche_aleatoire.png";
 import projImg8 from "../assets/img/cnn.png";
 import projImg7 from "../assets/img/datasci.jpg";
@@ -194,7 +194,7 @@ export const Projects=() =>{
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
+            <img className="background-image-right" src={colorSharp2} alt="" />
         </section>
 
     )
